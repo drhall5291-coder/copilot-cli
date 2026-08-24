@@ -1,0 +1,61 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #0b0e14;
+  color: #e8eaed;
+}
+a { color: inherit; }
+input, button {
+  font-family: inherit;
+  font-size: 1rem;
+}
+input {
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #2a2f3a;
+  background: #131722;
+  color: #e8eaed;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background: #4f7cff;
+  color: white;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+.card {
+  background: #131722;
+  border: 1px solid #2a2f3a;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+.page {
+  max-width: 480px;
+  margin: 4rem auto;
+  padding: 1rem;
+}
+.dashboard-page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.muted { color: #8a92a3; font-size: 0.9rem; }
+.error { color: #ff6b6b; font-size: 0.9rem; }
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: #2a2f3a;
+}
